@@ -35,11 +35,13 @@ class _ExamplePageState extends State<ExamplePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ShuffleGameWidget(
-        questions: [
-          ShuffleQuestion(answer: 'apple', hint: 'A fruit'),
-          ShuffleQuestion(answer: 'book', hint: 'Used to read'),
-        ],
+      body: Center(
+        child: ShuffleGameWidget(
+          questions: [
+            ShuffleQuestion(answer: 'apple is love', hint: 'A fruit'),
+            ShuffleQuestion(answer: 'book', hint: 'Used to read'),
+          ],
+        ),
       ),
     );
   }
